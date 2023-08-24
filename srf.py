@@ -406,6 +406,7 @@ class SRFMediathek(Screen):
             self.console.sendCtrlC()
         self["progress"].hide()
         self["DownloadLabel"].hide()
+        self.DL_File = None
 
     def Play(self):
         url = self["movielist"].getCurrent()[2]
